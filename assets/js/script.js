@@ -40,7 +40,6 @@ function cambiarContraste(){
     let eTextos = document.getElementsByClassName("titulo");
     let eInputs = document.getElementsByTagName("input");
     console.log(eInputs);
-    //console.log(eBody.style.backgroundColor)
     let fondo = eBody.style.backgroundColor;
     if(fondo=="black"){
         eBody.style.backgroundColor = "purple";
@@ -48,12 +47,10 @@ function cambiarContraste(){
             const element = eTextos[index];
             element.style.color = "purple";
         }
-
         for (let index = 0; index < eInputs.length; index++) {
             const element = eInputs[index];
             element.style.borderColor = "purple";
         }
-
        // eH1.style.color = "purple";
     }else{
         eBody.style.backgroundColor = "black";
